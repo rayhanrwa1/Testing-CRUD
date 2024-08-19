@@ -1,0 +1,147 @@
+/* Font family */
+body {
+    font-family: 'Roboto', sans-serif; /* Ensure you have the Roboto font loaded */
+  }
+  
+  /* Container for the form */
+  .form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    font-family: 'Roboto', sans-serif;
+    animation: fadeIn 0.5s ease-out; /* Animation for form appearance */
+  }
+  
+  /* Heading of the form */
+  .form-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+
+  .form-container p {
+    text-align: left;
+    color: #333;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+
+  
+  /* Form elements styling */
+  .form-container input[type="text"],
+  .form-container input[type="file"],
+  .form-container input[type="number"],
+  .form-container input[type="date"],
+  .form-container textarea {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: all 0.3s ease; /* Smooth transition for input fields */
+  }
+  
+  /* Textarea specific styling */
+  .form-container textarea {
+    resize: vertical;
+    height: 130px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Focus state for inputs and textarea */
+  .form-container input[type="text"]:focus,
+  .form-container input[type="number"]:focus,
+  .form-container input[type="date"]:focus,
+  .form-container textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.3);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus state */
+  }
+  
+  /* Button styling */
+  .form-container button {
+    width: 100%;
+    padding: 14px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease; /* Smooth transition for button */
+  }
+  
+  /* Button hover effect */
+  .form-container button:hover {
+    background-color: #45a049;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02); /* Slightly enlarge button on hover */
+  }
+  
+  /* File input styling */
+  .form-container input[type="file"] {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease; /* Smooth transition for file input */
+  }
+  
+  /* Label styling */
+  .form-container label {
+    font-weight: 600;
+    margin-top: 12px;
+    display: block;
+    color: #555;
+    font-size: 16px;
+    transition: color 0.3s ease; /* Smooth transition for label */
+  }
+  
+  /* Error message styling */
+  .form-container .error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  /* Rating stars styling */
+  .rating {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .rating .fa-star {
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.3s ease; /* Smooth transition for star color */
+  }
+  
+  .rating .fa-star:hover,
+  .rating .fa-star.active {
+    color: #FFD700; /* Gold color for stars */
+  }
+  
+  /* Fade-in animation for the form */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
